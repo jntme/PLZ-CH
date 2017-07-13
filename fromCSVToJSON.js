@@ -25,11 +25,12 @@ let ticker = 0;
 setTimeout(_ => {
   console.log(`tick #${ticker}!`);
   ticker++;
-}, 500);
+}, 100);
 
 function saveMapToFile(map) {
   const fileWriter = fs.createWriteStream('ch-cities.json');
 
+  fileWriter.write('[');
   myMap.forEach((value, key) => {
     const obj = {
       plz: key,
@@ -37,5 +38,7 @@ function saveMapToFile(map) {
     }
 
     fileWriter.write(JSON.stringify(obj, null, 4));
-  })
+    fileWriter.write(',\n');
+  });
+  fileWriter.write(']');
 }
