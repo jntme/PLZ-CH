@@ -1,0 +1,24 @@
+{
+  "name": "PLZ-CH",
+  "version": "1.0.0",
+  "description": "Script which is able to convert the CSV of Swiss containing postal information to a JSON file.",
+  "main": "convertFileToUTF8.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jntme/PLZ-CH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jntme/PLZ-CH/issues"
+  },
+  "homepage": "https://github.com/jntme/PLZ-CH#readme",
+  "dependencies": {
+    "csv": "^1.1.1",
+    "highland": "^2.11.1"
+  }
+}
